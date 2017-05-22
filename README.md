@@ -15,7 +15,7 @@ $ git pull origin master
 ```
 ## Manual
 ### Doctrine
-Comments in annnotations are just for a better imagination when programming. You can delete them.
+Comments in annnotations are just for better imagination when programming. You can delete them.
 #### mto
 ```php
 class Ingredient
