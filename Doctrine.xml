@@ -1,0 +1,44 @@
+<templateSet group="Doctrine">
+  <template name="mto" value="/**&#10; * @var $ENTITY$&#10; * Many $ENTITY1$ have One $ENTITY$.&#10; * @ORM\ManyToOne(targetEntity=&quot;$ENTITY$&quot;, inversedBy=&quot;$ENTITY2$&quot;)&#10; */" description="ORM ManyToOne annotation" toReformat="true" toShortenFQNames="true">
+    <variable name="ENTITY" expression="" defaultValue="" alwaysStopAt="true" />
+    <variable name="ENTITY1" expression="" defaultValue="" alwaysStopAt="true" />
+    <variable name="ENTITY2" expression="decapitalize(ENTITY1)" defaultValue="" alwaysStopAt="false" />
+    <context>
+      <option name="PHP" value="true" />
+    </context>
+  </template>
+  <template name="ob" value="/**&#10; * @var bool&#10; * @ORM\Column(type=&quot;boolean&quot;, nullable=FALSE)&#10; */" description="ORM boolean annotation" toReformat="false" toShortenFQNames="true">
+    <context>
+      <option name="PHP" value="true" />
+    </context>
+  </template>
+  <template name="oi" value="/**&#10; * @var int&#10; * @ORM\Column(type=&quot;smallint&quot;, nullable=FALSE)&#10; */" description="ORM smallint annotation" toReformat="true" toShortenFQNames="true">
+    <context>
+      <option name="PHP" value="true" />
+    </context>
+  </template>
+  <template name="os" value="/**&#10; * @var string&#10; * @ORM\Column(type=&quot;string&quot;, length=255, nullable=FALSE)&#10; */" description="ORM string annotation" toReformat="true" toShortenFQNames="true">
+    <context>
+      <option name="PHP" value="true" />
+    </context>
+  </template>
+  <template name="otm" value="/**&#10; * @var $ENTITY$[]|Collection&#10; * One $ENTITY1$ has Many $ENTITY$.&#10; * @ORM\OneToMany(targetEntity=&quot;$ENTITY$&quot;, mappedBy=&quot;$ENTITY2$&quot;)&#10; */" description="ORM OneToMany annotation" toReformat="false" toShortenFQNames="true">
+    <variable name="ENTITY" expression="" defaultValue="" alwaysStopAt="true" />
+    <variable name="ENTITY1" expression="" defaultValue="" alwaysStopAt="true" />
+    <variable name="ENTITY2" expression="decapitalize(ENTITY1)" defaultValue="" alwaysStopAt="false" />
+    <context>
+      <option name="PHP" value="true" />
+    </context>
+  </template>
+  <template name="ot" value="/**&#10; * @var string&#10; * @ORM\Column(type=&quot;text&quot;, nullable=FALSE)&#10; */" description="ORM text annotation" toReformat="true" toShortenFQNames="true">
+    <context>
+      <option name="PHP" value="true" />
+    </context>
+  </template>
+  <template name="otou" value="/**&#10; * @var $ENTITY$&#10; * @ORM\OneToOne(targetEntity=&quot;$ENTITY$&quot;)&#10; */" description="ORM OneToOne unidirectional annotation" toReformat="false" toShortenFQNames="true">
+    <variable name="ENTITY" expression="" defaultValue="" alwaysStopAt="true" />
+    <context>
+      <option name="PHP" value="true" />
+    </context>
+  </template>
+</templateSet>

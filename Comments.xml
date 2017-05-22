@@ -1,0 +1,22 @@
+<templateSet group="Comments">
+  <template name="ch" value="// **************************** HELPERS ****************************" description="comment HELPERS" toReformat="true" toShortenFQNames="true">
+    <context>
+      <option name="PHP" value="true" />
+    </context>
+  </template>
+  <template name="cs" value="// **************************** SUBMITS ****************************" description="comment SUBMITS" toReformat="true" toShortenFQNames="true">
+    <context>
+      <option name="PHP" value="true" />
+    </context>
+  </template>
+  <template name="cr" value="// **************************** RENDER ****************************" description="comment RENDER" toReformat="true" toShortenFQNames="true">
+    <context>
+      <option name="PHP" value="true" />
+    </context>
+  </template>
+  <template name="cha" value="// **************************** HANDLERS ****************************" description="comment HANDLERS" toReformat="true" toShortenFQNames="true">
+    <context>
+      <option name="PHP" value="true" />
+    </context>
+  </template>
+</templateSet>
